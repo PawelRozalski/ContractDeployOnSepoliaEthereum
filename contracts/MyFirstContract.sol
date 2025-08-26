@@ -12,4 +12,3 @@ contract MyFirstContract {
         message = newMessage;
     }
 }
-
