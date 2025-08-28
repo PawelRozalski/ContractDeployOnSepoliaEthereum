@@ -19,6 +19,25 @@ VSC: Extensions > Solidity (I was choised "juanblanco.solidity")
 BASH: cd ~/SolidityExperiences/contracts
 11. I was checked contents my folder "contracts" in "Solidity Experiences"
 BASH: ls 
+12. How I check mine correct folder?
+BASH: pwd
+13. I always install all necessary tools in the project folder. 
+14. I had installed Node.js, then I could install my first pack for my project in correct folder.
+15. I started with harmonogram for my project. 
+BASH: npm init -y 
+(Node.js create new file "package.json" with default setting about my project, exp. name project, version project, scrypts in project etc.)
+16. Node.js install "hardhat" toolbox.
+BASH: npm install --save-dev hardhat 
+(This install is only tool box, not production code. It's only for dev.)
+17. I want automatic connection with network testnet Ethereum Sepolia. 
+BASH: npm install -D @nomicfoundation/hardhat-toolbox
+(This toolbox give me "ethers" plug, it give automatic connection between my code and Sepolia. It easy deploy new contract.)
+18. 
+
+
+
+
+
 
 
 
