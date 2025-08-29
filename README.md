@@ -49,9 +49,11 @@ https://cloud.google.com
 When I have my profile, I create on this site new project for me, and it is similar name what I was created in VSC on my computer. I going to copy API address for connect my libraries "Hardhat" and "ethers" with Sepolia Ethereum.
 I search: "Blockchain RPC", in up central side. I was chase "Blockchain RPC: product".
 I copy JSON-ERC endpoint for Ethereum Sepolia > location: "us-central1", and I paste it in .env file to "SEPOLIA_RPC_URL=".
-25. 
-
-
+25. I had written ".env" in ".gitignore" file, before I downloaded my "PRIVATE_KEY" from Metamask.
+26. I have downloaded "PRIVATE_KEY" from Metamask and I was wrote it in ".env".
+METAMASK: select account > tap three dots > account details > private key > password > and I copy to ".env" file
+Now when I going to deploy new contract hardhat automatic send it to blockchain.  Hardhat deploy contract and download gas fee from this transaction. This transact perform in background.
+27. Create "hardhat.config.cjs".
 
 
 
