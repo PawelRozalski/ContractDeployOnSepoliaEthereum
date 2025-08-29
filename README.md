@@ -32,7 +32,24 @@ BASH: npm install --save-dev hardhat
 17. I want automatic connection with network testnet Ethereum Sepolia. 
 BASH: npm install -D @nomicfoundation/hardhat-toolbox
 (This toolbox give me "ethers" plug, it give automatic connection between my code and Sepolia. It easy deploy new contract.)
-18. 
+18. Now I must install "ethers" library. It's to appear in "devdependencies" in package.json file.
+BASH: npm install --save ethers 
+(It's need it for me to going to deploy contract.)
+19. I was installed "dotenv" library in next step.
+BASH: npm install --save dotenv
+(Thanks to this I can load my ".env" secret file.)
+20. I have created my ".env" file in VSC in project. In this file, I have my two variables: "SEPOLIA_RPC_URL" and "PRIVATE_KEY".
+21. I need tokens testnet for my Ethereum Sepolia blockchain in Metamask wallet.
+22. I know a lot of places, where I can download tokens testnet.
+23. I had choiced Google Cloud Web3 delivery when I download my testnet tokens.  
+https://cloud.google.com/application/web3/faucet/ethereum/sepolia
+(This is only 5% ETH but it is enough.)
+24. Now I sign up on the platform:
+https://cloud.google.com
+When I have my profile, I create on this site new project for me, and it is similar name what I was created in VSC on my computer. I going to copy API address for connect my libraries "Hardhat" and "ethers" with Sepolia Ethereum.
+I search: "Blockchain RPC", in up central side. I was chase "Blockchain RPC: product".
+I copy JSON-ERC endpoint for Ethereum Sepolia > location: "us-central1", and I paste it in .env file to "SEPOLIA_RPC_URL=".
+25. 
 
 
 
