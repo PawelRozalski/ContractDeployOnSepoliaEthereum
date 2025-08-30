@@ -21,7 +21,7 @@ module.exports = {
       },
     ],
   },
-  // loading and defining network and his address plus defining my private key from my metamask wallet
+  // loading and defining network and his address plus defining private key from my metamask wallet
   networks: {
     sepolia: {
       url: SEPOLIA_RPC_URL,
