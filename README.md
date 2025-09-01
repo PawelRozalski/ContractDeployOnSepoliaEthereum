@@ -53,7 +53,9 @@ I copy JSON-ERC endpoint for Ethereum Sepolia > location: "us-central1", and I p
 26. I have downloaded "PRIVATE_KEY" from Metamask and I was wrote it in ".env".
 METAMASK: select account > tap three dots > account details > private key > password > and I copy to ".env" file
 Now when I going to deploy new contract hardhat automatic send it to blockchain.  Hardhat deploy contract and download gas fee from this transaction. This transact perform in background.
-27. Create "hardhat.config.cjs".
+27. Create "hardhat.config.cjs" script. This file speaks Hardhat how to must work.
+28. Create "deploy.js" script. This "deploy.js" file deploy contract, connecting with network from "hardhat.config.cjs" and ".env".
+29. 
 
 
 
@@ -71,3 +73,4 @@ Other commits:
 [24.08.2025] Hardhat error HH8
 
  
+
