@@ -3,7 +3,7 @@ require("@nomicfoundation/hardhat-toolbox");
 // loading library dotenv and config for look and load ".env" file
 require("dotenv").config();
 
-// create constants and loading this consts from .env file 
+// create constants (no modificate in future) and loading this consts from .env file 
 const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
