@@ -63,17 +63,15 @@ BASH: npx hardhat run scripts/deploy.js --network sepolia
 32. Now, I will go to website Scan Sepolia Ethereum, write my address and I checked would my contract correct deploy:
 https://sepolia.etherscan.io/
 
+ERRORS:
+1. 
+
+
+
 Finish.
-
-
-
-
-
-
-
-
 
 
 Other commits: 
 [23.08.2025] Document config filename changes
 [24.08.2025] Hardhat error HH8
+
