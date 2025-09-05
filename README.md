@@ -8,16 +8,16 @@ https://code.visualstudio.com/Download
 3. I had synchronic my VSC with my Github account.
 4. It's installed Node.js for environment starter to going to write scripts in JavaScript. 
 https://nodejs.org/en/download
-5. Its opened new project in VSC "SolidityExperiences". 
+5. Its opened new project in VSC "ContractDeployOnSepoliaEthereum". 
 6. I was created new contract "MyFirstContract.sol".
 7. Its created new reposytory on GitHub.
 VSC: Source Control > Publish to GitHub
 8. Its created .gitignore file when I was pushed my new repository on GitHub.
 9. Instaled Solidity in Extensions VSC.
 VSC: Extensions > Solidity (I was choised "juanblanco.solidity")
-10. I opened terminal bash and I go to my "Contracts" folder in "SolidityExperiences" folder. 
-BASH: cd ~/SolidityExperiences/contracts
-11. I was checked contents my folder "contracts" in "Solidity Experiences"
+10. I opened terminal bash and I go to my "Contracts" folder in "ContractDeployOnSepoliaEthereum" folder. 
+BASH: cd ~/ContractDeployOnSepoliaEthereum/contracts
+11. I was checked contents my folder "contracts" in "ContractDeployOnSepoliaEthereum"
 BASH: ls 
 12. How I check mine correct folder?
 BASH: pwd
@@ -63,15 +63,49 @@ BASH: npx hardhat run scripts/deploy.js --network sepolia
 32. Now, I will go to website Scan Sepolia Ethereum, write my address and I checked would my contract correct deploy:
 https://sepolia.etherscan.io/
 
-ERRORS:
-1. 
+ERRORS and WARNINGS:
+1. BASH > HH8
+My ".env" wasn't in correct folder.
+Solution: File ".env" must be in general project folder.
 
+2. BASH > HHE909
+HardHat hadn't found compatible solc version. It was wrote 0.8.29 version and Hardhat didn't downloaded.
+Solution:
 
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.28",
+      },
+      {
+        version: "0.8.29",
+      },
+    ],
+  },
+
+3. BASH > Error HHE201
+I didn't installed appropriate plugs.
+Solution: npm install -D @nomicfoundation/hardhat-toolbox
+
+4. BASH > HH13
+It "hardhat.config.ts" script in (.ts) typescript version. 
+Solution: I installed: npm install --save-dev ts-node --legacy-peer-deps 
+It didn't working. 
+Solution: I changed name and code in hardhat.config.cjs (.ts > .cjs) nad deploy.js scripts. In bash:
+npx hardhat clean
+npx hardhat compile
+It's working.
+
+5. BASH > HH601
+Script "deploy.js" not exist. 
+Solution: I transferred my "deploy.js" file in good place.
 
 Finish.
+
 
 
 Other commits: 
 [23.08.2025] Document config filename changes
 [24.08.2025] Hardhat error HH8
+
 
